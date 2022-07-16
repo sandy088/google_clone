@@ -4,6 +4,7 @@ import 'package:google_clone/colors.dart';
 import 'package:google_clone/widgets/search.dart';
 import 'package:google_clone/widgets/web/search_buttons.dart';
 import 'package:google_clone/widgets/web/translation_buttons.dart';
+import 'package:google_clone/widgets/web/web_footer.dart';
 
 class WebScreenLayout extends StatelessWidget {
   const WebScreenLayout({Key? key}) : super(key: key);
@@ -16,10 +17,24 @@ class WebScreenLayout extends StatelessWidget {
           backgroundColor: backgroundColor,
           elevation: 0,
           actions: [
+            
             TextButton(
                 onPressed: () {},
                 child: const Text(
                   "Gmail",
+                  style: TextStyle(
+                    color: primaryColor,
+                    fontWeight: FontWeight.w400,
+                  ),
+                )),
+            const SizedBox(
+              width: 10,
+            ),
+
+            TextButton(
+                onPressed: () {},
+                child: const Text(
+                  "Images",
                   style: TextStyle(
                     color: primaryColor,
                     fontWeight: FontWeight.w400,
@@ -75,7 +90,8 @@ class WebScreenLayout extends StatelessWidget {
                       TranslationButtons(),
 
                     ],
-                  )
+                  ),
+                  const WebFooter(),
                 ],
               ))
             ],
