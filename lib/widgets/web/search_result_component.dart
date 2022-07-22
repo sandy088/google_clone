@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_clone/colors.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:url_launcher/url_launcher_string.dart';
 
 class SearchResultCompnent extends StatefulWidget {
   final String linkToGo;

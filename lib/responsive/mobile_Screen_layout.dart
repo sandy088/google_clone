@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_clone/colors.dart';
 import 'package:google_clone/widgets/mobile/mobile_footer.dart';
@@ -79,13 +80,11 @@ class MobileScreenLayout extends StatelessWidget {
                       SizedBox(
                         height: 20,
                       ),
-                      SearchButtons(),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      TranslationButtons(),
+                      
                     ],
                   ),
+
+                  if(KeyboardVisibilityProvider.isKeyboardVisible(context))
                   const MobileFooter(),
                 ],
               ))
