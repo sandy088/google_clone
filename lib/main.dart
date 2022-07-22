@@ -21,13 +21,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor,
       ),
-      // home: ResponsiveLayoutScreen(
-      //   mobileScreenLyout: MobileScreenLayout(), 
-      //   webScreenLayout: WebScreenLayout(),
-      //   ),
+      home: const ResponsiveLayoutScreen(
+        mobileScreenLyout: MobileScreenLayout(), 
+        webScreenLayout: WebScreenLayout(),
+        ),
 
-      //temporary
-      home: SearchScreen(),
+      
     );
   }
 }
